@@ -201,4 +201,7 @@ class data_graph():
                  ng.add( (EX[self.PROPS[p]['label']], SH.nodeKind, SH.BlankNode) )
             elif self.PROPS[p]['nodekind'] == 'Literal':
                  ng.add( (EX[self.PROPS[p]['label']], SH.nodeKind, SH.Literal) )
-        print(ng.serialize(format=serial))
+        output = ng.serialize(format=serial)
+        print(output)
+        return output
+
